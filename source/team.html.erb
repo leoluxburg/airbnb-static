@@ -1,0 +1,25 @@
+<h1 class="text-center">Our Team</h1>
+<ul class="list-inline text-center">
+  <% ["anne", "seb", "romain"].each do |member| %>
+    <li>
+      <h3><%= member.capitalize %></h3>
+      <%= image_tag "#{member}.jpg", class: "avatar-xl"%>
+    </li>
+  <% end %>
+</ul>
+<!-- <div class="text-center ">
+  <a href="">
+  <ul class="list-inline">
+    <li>
+      <i style="font-size: 30px" class="fa fa-envelope" aria-hidden="true"></i>
+    </li>
+    <li>
+      <h1 class="padded"> contact@airbnb.com</h1>
+    </li>
+  </ul>
+  </a>
+</div> -->
+
+<% link_to "index.html", class: "text-center" do %>
+  <h1 class="padded"> <i class="fa fa-envelope" aria-hidden="true"></i> contact@airbnb.com</h1>
+<% end %>
